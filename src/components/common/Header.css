@@ -15,8 +15,10 @@
     width: 90px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     .Header-logo {
-        display: none;
+        display: flex;
+        width: 15%;
     }
 }
+

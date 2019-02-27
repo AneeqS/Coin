@@ -20,13 +20,20 @@
     font-weight: 400;
 }
 
+.Table tr th {
+    padding: 10px 40px;
+    text-align: left;
+    font-size: 14px;
+
+}
+
 .Table-body {
     text-align: left;
     background-color: #0f273d;
 }
 
 .Table-body tr td {
-    padding: 24px 20px;
+    padding: 24px 30px;
     border-bottom: 2px solid #0c2033;
     color: #fff;
     cursor: pointer;
@@ -41,4 +48,38 @@
 .Table-dollar {
     color: #9cb3c9;
     margin-right: 6px;
+}
+
+@media (max-width: 700px){
+
+    .Table-container {
+        overflow-x: auto; /* Needed for table to be responsive */
+    }
+
+    .Table-rank {
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    .Table tr th {
+        padding: 10px 20px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+
+    .Table-body tr td {
+        padding: 20px 20px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
 }
