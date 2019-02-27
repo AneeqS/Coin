@@ -30,10 +30,25 @@ class Detail extends React.Component{
     componentDidMount(){
 
         const currencyId = this.props.match.params.id;
+        this.fetchCurrency(currencyId);
+
+    }
+
+    componentWillReceiveProps(nextProps){
+
+        if(this.props.location.pathname !== nextProps.location.pathname){
+            const newId = nextProps.match.params.id;
+            this.fetchCurrency(newId);
+        }
+
+
+    }
+
+    fetchCurrency(id){
 
         this.setState({loading: true});
 
-        fetch(`${API_URL}/cryptocurrencies/${currencyId}`)
+        fetch(`${API_URL}/cryptocurrencies/${id}`)
             .then(handleResponse)
             .then((currency) => {
 
