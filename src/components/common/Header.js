@@ -1,9 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import logo from './logo.png';
+import './Header.css';
+
 
 const Header = () =>{
   return (
-      <div>Header</div>
+      <div className="Header">
+          <img src={logo} alt="logo" className="Header-logo"/>
+      </div>
   );
 };
 
