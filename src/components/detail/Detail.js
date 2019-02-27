@@ -40,8 +40,6 @@ class Detail extends React.Component{
             const newId = nextProps.match.params.id;
             this.fetchCurrency(newId);
         }
-
-
     }
 
     fetchCurrency(id){
