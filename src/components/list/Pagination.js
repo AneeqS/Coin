@@ -14,7 +14,7 @@ const Pagination = (props) => {
         <div className="Pagination">
             <button
                 className="Pagination-button"
-                onclick={() => handlePaginationClick('prev')}
+                onClick={() => handlePaginationClick('prev')}
                 disabled={page <= 1}
             >
                 &larr;
@@ -35,7 +35,7 @@ const Pagination = (props) => {
 
 Pagination.propTypes = {
     totalPages: PropTypes.number.isRequired,
-    pages: PropTypes.number.isRequired,
+    page: PropTypes.number.isRequired,
     handlePaginationClick: PropTypes.func.isRequired,
 };
 

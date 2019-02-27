@@ -52,8 +52,7 @@ class List extends React.Component{
                     error: error.errorMessage,
                     loading: false,
                 });
-            });
-
+            })
     }
 
 
