@@ -11,7 +11,7 @@ const App = () => {
 
 
             <h1>{title}</h1>
-            <p>Crypto Currencies Financial Data</p>
+            <p>Up to Date Crypto Currencies Financial Data</p>
 
         </div>
     );
